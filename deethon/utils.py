@@ -49,7 +49,7 @@ def get_file_path(track: Track, ext: str) -> Path:
     std_dir = "Songs"
     dir_path = Path(std_dir, album_artist, album_title)
     dir_path.mkdir(parents=True, exist_ok=True)
-    file_name = f"{track.number:02} {track.title}{ext}"
+    file_name = f"{track.artist} - {track.title}{ext}"
     return dir_path / file_name.translate(forbidden_chars)
 
 
