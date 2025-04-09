@@ -20,7 +20,7 @@ requests = "^2.23.0"
 pycryptodome = "^3.9.7"
 importlib_metadata = { version = "^1.6", python = "<3.8" }
 
-[tool.poetry.dev-dependencies]
+[poetry.group.dev.dependencies]
 mkdocs-material = "^5.4.0"
 mkdocstrings = "^0.12.1"
 pytest = "*"
